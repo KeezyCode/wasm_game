@@ -15,7 +15,7 @@ struct Player {
     x: f64,
     y: f64,
 }
-
+// tiny change test of git commit and push
 #[wasm_bindgen(start)]
 pub fn start() -> Result<(), JsValue> {
     let window = window().unwrap();
