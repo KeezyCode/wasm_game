@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WASM Game</title>
+    <style>
+        canvas { border: 1px solid black; }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="800" height="600"></canvas>
+
+    <!-- This tells Trunk to compile src/lib.rs to WASM and load it -->
+    <script type="module">
+        import init from './pkg/wasm_game.js';
+        init();
+    </script>
+</body>
+</html>
